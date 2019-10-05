@@ -89,7 +89,7 @@ if __name__ == "__main__":
     neptune.init(
         project_qualified_name=opts.neptune_project or 'anonymous/anonymous',
         backend=neptune.OfflineBackend() if not opts.neptune_project else None)
-    with neptune.create_experiment(params=vars(opts), upload_source_files=get_filepaths(), tags=[]) as experiment:
+    with neptune.create_experiment(params=vars(opts), upload_source_files=get_filepaths()) as experiment:
 
         # Pretraining game
         if not opts.no_transfer:
