@@ -9,7 +9,7 @@ boto3==1.9.241
 botocore==1.12.241
 bravado==10.4.1
 bravado-core==5.13.2
-certifi==2019.9.11
+certifi==2022.12.7
 cffi==1.12.3
 chardet==3.0.4
 Click==7.0
